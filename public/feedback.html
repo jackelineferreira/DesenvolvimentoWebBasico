@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackeline Ferreira</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-inicial">
+  
+  <header>
+    <nav class="navbar">
+      <div class="logo">Meu Portifólio</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listas.html">Hobbies</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <div class="menu-hamburguer" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="banner-content">
+        <h1 id="maquina-escrever"></h1>
+      <h2>Bem vindo ao meu portfólio!</h2>
+      <p>Estudante Full Stack pela +Prati, pronto pra quebrar padrões e criar soluções.</p>
+    </div>
+  </section>
+
+<main class="form-page">
+  <section class="form-container">
+    <form action="#" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="endereco">Endereço Completo:</label>
+      <input type="text" id="endereco" name="endereco" />
+
+      <label for="tipo">Tipo de feedback:</label>
+      <select id="tipo" name="tipo">
+        <option>Sugestão</option>
+        <option>Crítica</option>
+        <option>Elogio</option>
+      </select>
+
+      <label for="mensagem">Seu Feedback:</label>
+      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+      <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+
+    <script>
+    function toggleMenu() {
+      const links = document.getElementById('nav-links');
+      links.classList.toggle('ativo');
+    }
+  </script>
+
+    <script>
+    const texto = "Olá, eu sou Jackeline Ferreira";
+    const elemento = document.getElementById("maquina-escrever");
+    let index = 0;
+
+    function escrever() {
+      if (index < texto.length) {
+        elemento.innerHTML += texto.charAt(index);
+        index++;
+        setTimeout(escrever, 100); // velocidade da digitação
+      }
+    }
+
+    escrever();
+  </script>
+
+  <footer>
+    <p>© 2025 Jackeline Ferreira</p>
+  </footer>
+
+</body>
+</html>

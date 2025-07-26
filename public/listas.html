@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackeline Ferreira</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-hobbies">
+  
+  <header>
+    <nav class="navbar">
+      <div class="logo">Meu Portifólio</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listas.html">Hobbies</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <div class="menu-hamburguer" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+    <section class="banner">
+    <div class="banner-content">
+        <h1 id="maquina-escrever"></h1>
+      <h2>Meus Hobbies, Receitas e Dicas para Devs</h2>
+      <p>Esse cantinho é um reflexo do que me move: a curiosidade, a vontade de aprender e o prazer de compartilhar.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="hobbies-section">
+      <h2>Meus Hobbies</h2>
+      <ul class="carrossel-hobbies">
+        <li class="card-hobby">
+          <img src="img/hobbie2-caminhar.jpg" alt="Caminhadas" />
+          <p>Caminhadas</p>
+        </li>
+        <li class="card-hobby">
+          <img src="img/hobbie4-trilha.jpg" alt="Trilhas" />
+          <p>Trilhas</p>
+        </li>
+        <li class="card-hobby">
+          <img src="img/hobiie7-viajar.jpg" alt="Viajar" />
+          <p>Viajar</p>
+        </li>
+        <li class="card-hobby">
+          <img src="img/hobbie9-andardemoto.jpg" alt="Pilotar" />
+          <p>Pilotar</p>
+        </li>
+        <li class="card-hobby">
+          <img src="img/hobiie6-estudar.jpg" alt="Aprender novas tecnologias" />
+          <p>Aprender novas tecnologias</p>
+        </li>
+      </ul>
+</section>
+
+<section class="receitas-section">
+  <h2>Meu Caderno de Receitas</h2>
+  <div class="receitas-grid">
+
+    <div class="card-receita">
+      <div class="card-header" onclick="toggleReceita(this)">
+        <div class="card-imagem" style="background-image: url('img/pudim-de-leite.jpg');">
+          <h3>Pudim de Leite</h3>
+        </div>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="card-conteudo">
+        <h4>Ingredientes:</h4>
+        <ul>
+          <li>2 latas de leite condensado</li>
+          <li>4 ovos</li>
+          <li>2 e ½ xícaras de leite</li>
+        </ul>
+        <h4>Modo de Preparo:</h4>
+        <ol>
+          <li>Bata os ovos.</li>
+          <li>Junte o leite condensado e o leite.</li>
+          <li>Misture bem.</li>
+          <li>Asse em banho-maria até firmar.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="card-receita">
+      <div class="card-header" onclick="toggleReceita(this)">
+        <div class="card-imagem" style="background-image: url('img/capuccino.jpg');">
+          <h3>Capuccino Caseiro</h3>
+        </div>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="card-conteudo">
+        <h4>Ingredientes:</h4>
+        <ul>
+          <li>2 xícaras de leite em pó</li>
+          <li>1/3 xícara de café solúvel</li>
+          <li>1/2 xícara de açúcar</li>
+        </ul>
+        <h4>Modo de Preparo:</h4>
+        <ol>
+          <li>Bata todos os ingredientes no liquidificador até virar pó.</li>
+          <li>Para servir, use 2-3 colheres com leite quente.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="card-receita">
+      <div class="card-header" onclick="toggleReceita(this)">
+        <div class="card-imagem" style="background-image: url('img/lasanha-a-bolonhesa.jpeg');">
+          <h3>Lasanha à Bolonhesa</h3>
+        </div>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="card-conteudo">
+        <h4>Ingredientes:</h4>
+        <ul>
+          <li>400g massa de lasanha</li>
+          <li>500g carne moída</li>
+          <li>Queijo, molho e temperos a gosto</li>
+        </ul>
+        <h4>Modo de Preparo:</h4>
+        <ol>
+          <li>Refogue a carne moída até dourar.</li>
+          <li>Monte em camadas com a massa, queijo e molho.</li>
+          <li>Asse no forno até dourar e borbulhar.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="dev-sites">
+  <h2>Sites Interessantes para Devs Iniciantes</h2>
+  <div class="cards-container">
+    <div class="card">
+      <h3>W3Schools</h3>
+      <p>Plataforma de aprendizado com tutoriais de HTML, CSS, JavaScript, e muito mais.</p>
+      <a href="https://www.w3schools.com/" target="_blank">Acessar</a>
+    </div>
+    <div class="card">
+      <h3>Code.tech</h3>
+      <p>A maneira gratuita, divertida e eficaz de aprender a programar!.</p>
+      <a href="https://coddy.tech/" target="_blank">Acessar</a>
+    </div>
+    <div class="card">
+      <h3>Codechef</h3>
+      <p>Cansado da teoria? Vamos programar de verdade.</p>
+      <a href="https://www.codechef.com//" target="_blank">Acessar</a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const links = document.getElementById('nav-links');
+      links.classList.toggle('ativo');
+    }
+  </script>
+
+    <script>
+    const texto = "Ei, que bom te ver por aqui!";
+    const elemento = document.getElementById("maquina-escrever");
+    let index = 0;
+
+    function escrever() {
+      if (index < texto.length) {
+        elemento.innerHTML += texto.charAt(index);
+        index++;
+        setTimeout(escrever, 100); 
+      }
+    }
+
+    escrever();
+  </script>
+
+<script>
+function toggleReceita(header) {
+  const card = header.parentElement;
+  const grid = card.parentElement;
+  if (card.classList.contains('ativo')) {
+    card.classList.remove('ativo'); // fecha se já está aberto
+  } else {
+    grid.querySelectorAll('.card-receita').forEach(c => c.classList.remove('ativo'));
+    card.classList.add('ativo'); // abre só o clicado
+  }
+}
+</script>
+
+  <footer>
+    <p>© 2025 Jackeline Ferreira</p>
+  </footer>
+</body>
+</html>
